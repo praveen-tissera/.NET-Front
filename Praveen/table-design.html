@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML TABLES</title>
+</head>
+<body>
+    <table border="1" width="500px" bgcolor="green">
+        <tr height="60px" bgcolor="red">
+            <th width="100px">Animal</th>
+            <th>Owner</th>
+            <th>Adress</th>
+        </tr>
+        <tr height="120px">
+            <td>Gimi</td>
+            <td>Praveen</td>
+            <td bgcolor="yellow">122,colombo 5</td>
+        </tr>
+
+
+    </table>
+
+    <hr>
+
+    <table border="2" width="50%">
+        <caption>Student Details</caption>
+        <tr>
+            <th>Student first name</th>
+            <th>Student Last name</th>
+            <th>School</th>
+
+        </tr>
+        <tr>
+            <td colspan="2">Nuwan perera</td>
+            <!-- <td>perera</td> -->
+            <td>abc college</td>
+
+        </tr>
+        <tr>
+            <td>Nimal</td>
+            <td>Kumara</td>
+            <td rowspan="2">pqr college</td>
+
+        </tr>
+        <tr>
+            <td>gayan</td>
+            <td>perera</td>
+            <!-- <td>xyz college</td> -->
+
+        </tr>
+
+
+    </table>
+
+    <hr>
+
+    <table border="1">
+        <colgroup>
+            <col> 
+            <col style="background-color: yellow">
+            <col>
+        </colgroup>
+        <tr> 
+            <th>Data 1</th> <th>Data 2</th> 
+        </tr>
+        <tr> 
+            <td>Calcutta</td> <td>Pizza</td> 
+        </tr>
+        <tr> 
+            <td>Robots</td> <td>Jazz</td> 
+        </tr>
+    </table>
+
+    <h1>nesting table</h1>
+
+
+    <table border="1">
+        <tr>
+            <td>cell one</td>
+            <td>
+                nesting cell
+                <table border="1" bgcolor="red">
+                    <tr>
+                        <td>nest cell 1</td>
+                        <td>nest cell 2</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+    </table>
+
+</body>
+</html>
