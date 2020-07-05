@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        /* universal selector -  */
+
+        *{
+            color: red;
+        }
+        /* type selector*/
+
+        note{
+            font-size: 30px;
+            color: green;
+        }
+        .second-item{
+            color: blue;
+        }
+        .font-style{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        #home-link{
+            color: #ccc;
+            font-size: 20px;
+            text-decoration: none;
+        }
+        /* group combinator */
+        note,.second-item{
+            font-family: monospace;
+        }
+        /* decendent combinator */
+        /* body div a{
+            text-transform: uppercase;
+        }
+        div a{
+
+        }
+        body div #home-link{
+
+        }
+        div #home-link{
+
+        } */
+
+        body > a{
+            text-transform: uppercase;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>This is heading </h1>
+
+    <p>This is paragraph</p>
+    <note>
+        This is custom tag valid syntax
+    </note>
+
+    <note>
+        This is custom tag valid syntax
+    </note>
+
+    
+    <p class="second-item font-style">
+        pharagaraph with class selector
+    </p>
+    <p class="second-item">
+        pharagaraph third - with class selector
+    </p>
+
+
+    <div>
+        Container one <a href="#" id="home-link">go to home page</a>
+    </div>
+
+    <a href="#" id="home-link">go to home page</a>
+</body>
+</html>
