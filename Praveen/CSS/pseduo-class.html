@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:link {
+            color: rgb(11, 133, 48);
+        }
+
+        /* Unvisited links */
+        a:visited {
+            color: rgb(101, 105, 105);
+        }
+
+        /* Visited links */
+        a:hover {
+            background: yellow;
+        }
+
+        /* Hovered links */
+        a:active {
+            color: red;
+        }
+
+        /* Active links */
+        p:active {
+            background: rgb(228, 79, 215);
+        }
+
+        /* Active paragraphs */
+        input:checked {
+            cursor: help;
+
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+        This paragraph contains a link:
+        <a href="#">This link will turn red while you click on it.</a>
+        The paragraph will get a gray background while you click on it or the
+        link.
+    </p>
+
+    <input type="checkbox" name="cb1">
+    <input type="checkbox" name="cb2" checked="checked">
+</body>
+
+</html>
